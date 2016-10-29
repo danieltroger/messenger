@@ -26,7 +26,7 @@
      NSString *toc = (NSString *)CFBridgingRelease(CFURLCreateStringByAddingPercentEscapes(NULL,(__bridge CFStringRef) to.text, NULL,CFSTR("!*'();:@&=+$,/?%#[]"),kCFStringEncodingUTF8));
      NSString *msgc = (NSString *)CFBridgingRelease(CFURLCreateStringByAddingPercentEscapes(NULL,(__bridge CFStringRef) message.text, NULL,CFSTR("!*'();:@&=+$,/?%#[]"),kCFStringEncodingUTF8));
      NSString *subc = (NSString *)CFBridgingRelease(CFURLCreateStringByAddingPercentEscapes(NULL,(__bridge CFStringRef) sub.text, NULL,CFSTR("!*'();:@&=+$,/?%#[]"),kCFStringEncodingUTF8));
-    NSString *phpScript = [NSString stringWithFormat: @"http://www.dt.comyr.com/sendmail.php?from=%@&to=%@&msg=%@&sub=%@",fromc,toc,msgc,subc];
+    NSString *phpScript = [NSString stringWithFormat: @"http://192.168.178.43/sendmail.php?from=%@&to=%@&msg=%@&sub=%@",fromc,toc,msgc,subc];
    /* phpScript = [phpScript stringByReplacingOccurrencesOfString:@"\n"
                                                      withString:@"%0D%0A"];*/
     
